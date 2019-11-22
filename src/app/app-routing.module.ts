@@ -6,8 +6,7 @@ import { AuthGuard } from './guards/auth.guard';
 const routes: Routes = [
   {
     path: '',
-    loadChildren: './home/home.module#HomePageModule',
-    canActivate: [TutorialGuard]
+    loadChildren: './home/home.module#HomePageModule'
   },
   {
     path: 'todo',
